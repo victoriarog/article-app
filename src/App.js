@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './App.css';
+import Search from './components/Search';
 
 function ArticleList({articles, onArticleClick}) {
   return (
@@ -7,8 +8,10 @@ function ArticleList({articles, onArticleClick}) {
       <ul>
         {articles.map((article, index) => (
           <li key = {article.id} onClick={() => onArticleClick(article)}>
+            <div>
             {article.title}
             {article.undertitle}
+            </div>
           </li>
         ))}
       </ul>
@@ -34,6 +37,7 @@ function App() {
 
   const [articles, setArticles] = useState([]);
   const [selectedArticle, setSelectedArticle] = useState([null]);
+  const [searchArticle, setSearchedArticle] = useState('');
 
   useEffect(() => {
     fetch('/data/ArticleData.json')
@@ -46,9 +50,18 @@ function App() {
     setSelectedArticle(article);
   };
 
+  const handleSearchChange = (searchArticle) => {
+    setSearchedArticle(searchArticle);
+  };
+
+  const filteredArticles = articles.filter((article) =>
+  article.title.toLowerCase().includes(searchArticle.toLowerCase())
+);
+
 
   return (
     <div className="App">
+      <Search searchArticle={searchArticle} onSearchChange={handleSearchChange} />
       <div className='flex-container'>
         <ArticleList articles={articles} onArticleClick={handleArticleClick} />
         <ArticleText article={selectedArticle} />
