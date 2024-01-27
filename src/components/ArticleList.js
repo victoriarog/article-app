@@ -1,6 +1,6 @@
 function ArticleList({articles, onArticleClick}) {
     return (
-      <div className='flex-item'>
+      <div className='flex-item1'>
         <ul>
           {articles.map((article, index) => (
             <li key = {article.id} onClick={() => onArticleClick(article)}>

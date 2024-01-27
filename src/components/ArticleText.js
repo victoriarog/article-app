@@ -1,14 +1,14 @@
 function ArticleText({article}) {
     return (
-      <div className='flex-item'>
+      <div className='flex-item2'>
         {article ? (
           <div className="textBox">
-            <h3>{article.title}</h3>
+            <h1>{article.title}</h1>
             <p>{article.text}</p>
           </div>
         ) : (
-            <div className="emptyTextBox">
-                <p>Select an article</p>
+            <div className="textBox">
+                <h1>Select an article</h1>
             </div>
         )
         }
