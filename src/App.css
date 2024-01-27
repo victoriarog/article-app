@@ -7,7 +7,7 @@
 
 .flex-container {
 
-  padding: 2em 2em 2em 0;
+  padding: 2em 3em 2em 0;
   height: calc(100% - 10%);
   
   display: flex;

@@ -1,6 +1,6 @@
-function Search({searchArticle, onSearchChange}) {
-    const handleChange = (e) => {
-        onSearchChange(e.target.value)
+function Search({searchArticle, setSearchArticle}) {
+    const handleSearchChange = (e) => {
+        setSearchArticle(e.target.value)
     };
     
     return (
@@ -9,7 +9,7 @@ function Search({searchArticle, onSearchChange}) {
             type="text"
             placeholder="Search..."
             value={searchArticle}
-            onChange={handleChange}
+            onChange={handleSearchChange}
             />
         </div>
     )
