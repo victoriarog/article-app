@@ -8,6 +8,7 @@ function App() {
 
   const [articles, setArticles] = useState([]);
   const [selectedArticle, setSelectedArticle] = useState(null);
+  const [readArticles, setReadArticles] = useState({});
 
   useEffect(() => {
     fetch('/data/ArticleData.json')
@@ -18,12 +19,13 @@ function App() {
 
   const handleArticleClick= (article) => {
     setSelectedArticle(article);
+    setReadArticles({ ...readArticles, [article.id]: true });
   };
 
   return (
     <div className="App">
       <div className='flex-container'>
-        <ArticleList articles={articles} onArticleClick={handleArticleClick} />
+        <ArticleList articles={articles} onArticleClick={handleArticleClick} readArticles={readArticles}/>
         <VerticalLine />
         <ArticleText article={selectedArticle} />
       </div>
