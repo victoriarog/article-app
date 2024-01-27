@@ -1,37 +1,8 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import Search from './components/Search';
-
-function ArticleList({articles, onArticleClick}) {
-  return (
-    <div className='flex-item'>
-      <ul>
-        {articles.map((article, index) => (
-          <li key = {article.id} onClick={() => onArticleClick(article)}>
-            <div>
-            {article.title}
-            {article.undertitle}
-            </div>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
-
-function ArticleText({article}) {
-  return (
-    <div className='flex-item'>
-      {article && (
-        <div>
-          <h2>{article.title}</h2>
-          <p>{article.text}</p>
-        </div>
-      )
-      }
-    </div>
-  );
-}
+import ArticleList from './components/ArticleList';
+import ArticleText from './components/ArticleText';
 
 function App() {
 
@@ -52,12 +23,8 @@ function App() {
 
   const handleSearchChange = (searchArticle) => {
     setSearchedArticle(searchArticle);
+    console.log(searchArticle);
   };
-
-  const filteredArticles = articles.filter((article) =>
-  article.title.toLowerCase().includes(searchArticle.toLowerCase())
-);
-
 
   return (
     <div className="App">
