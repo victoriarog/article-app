@@ -7,7 +7,7 @@ function Search({searchArticle, setSearchArticle}) {
         <div>
             <input
             type="text"
-            placeholder="Search..."
+            placeholder="Search for an article here"
             value={searchArticle}
             onChange={handleSearchChange}
             />

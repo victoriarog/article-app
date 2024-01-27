@@ -1,14 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+:root * {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+}
 
 .App {
   text-align: center;
-  height: 100vh;
+  height: 100vh; 
 }
 
 .flex-container {
-
   padding: 2em 3em 2em 0;
-  height: calc(100% - 10%);
+  height: calc(100% - 15vh);
   
   display: flex;
   flex-direction: row;
@@ -40,8 +44,6 @@
 }
 
 h1, h3, p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300; 
   margin: 0.5vh;
 }
 
@@ -65,10 +67,39 @@ p {
 
 li {
   list-style: none;
+  padding-bottom: 0.7vh ;
 }
 
 ul {
   margin: 0;
+}
+
+input {
+  width: 25vw;
+  height: 4.5vh;
+  border: none;
+  border-bottom: 0.1vh solid grey;
+  font-size: 2vh;  
+  
+  position: relative;
+  right: 35vw;
+
+  padding-top: 1vh;
+}
+
+input:focus {
+  outline: none;
+}
+
+.pagination {
+  padding: 1vh;
+}
+
+.paginationButton {
+  border: 0.1vh solid grey;
+  border-radius: 2vh;
+  font-size: 3vh;
+  padding: 0 1vh;
 }
 
 
