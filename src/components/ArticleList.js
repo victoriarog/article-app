@@ -4,9 +4,9 @@ function ArticleList({articles, onArticleClick}) {
         <ul>
           {articles.map((article, index) => (
             <li key = {article.id} onClick={() => onArticleClick(article)}>
-              <div>
-              {article.title}
-              {article.undertitle}
+              <div className="articleBox">
+              <h1>{article.title}</h1>
+              <h3>{article.undertitle}</h3>
               </div>
             </li>
           ))}
