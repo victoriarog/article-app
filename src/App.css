@@ -31,23 +31,27 @@
 .flex-item2 {
   flex-basis: 60%;
 
-  border: 1px solid grey;
+  border: 0.1vh solid grey;
   border-radius: 10px;
 }
 
+.vertical-line {
+  border-left: 0.1vh solid grey;
+}
 
 h1, h3, p {
   font-family: "Montserrat", sans-serif;
   font-weight: 300; 
+  margin: 0.5vh;
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 2.8vh;
 }
 
 .articleBox {
-  border: 1px solid grey;
-  border-radius: 10px;
+  border: 0.1vh solid grey;
+  border-radius: 1vh;
 }
 
 

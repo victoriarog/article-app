@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import ArticleList from './components/ArticleList';
 import ArticleText from './components/ArticleText';
+import VerticalLine from './components/VerticalLine';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
     <div className="App">
       <div className='flex-container'>
         <ArticleList articles={articles} onArticleClick={handleArticleClick} />
+        <VerticalLine />
         <ArticleText article={selectedArticle} />
       </div>
     </div>
