@@ -17,7 +17,6 @@
     *[Search Component](#search-component)
     *[Pagination Component](#pagination-component)
     *[VerticalLine Component](#verticalline-component)
-
 * [Technical Trade-offs](#technical-trade-offs)
 * [Contributing](#contributing)
 * [Authors](#authors)
