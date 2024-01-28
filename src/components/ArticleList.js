@@ -28,7 +28,7 @@ function ArticleList({ articles, onArticleClick, readArticles, searchArticle }) 
             <li key={article.id} onClick={() => onArticleClick(article)}>
               <div className="articleBox"
                 style={{ 
-                    backgroundColor: readArticles[article.id] ? 'rgba(169, 169, 169, 0.5)' : 'transparent'
+                    backgroundColor: readArticles[article.id] ? 'rgba(169, 169, 169, 0.25)' : 'transparent'
                 }}
                 >
                   <h1>{article.title}</h1>

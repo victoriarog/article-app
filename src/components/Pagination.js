@@ -4,7 +4,7 @@ function Pagination({ currentPage, totalPages, onPageChange }) {
   for (let pageNumber = 1; pageNumber <= totalPages; pageNumber++) {
     const isActive = pageNumber === currentPage;
     const buttonStyle = {
-      backgroundColor: isActive ? '#FBEAE8' : '#ffbd00'
+      backgroundColor: isActive ? '#E7ACA7' : '#ECEEF0'
     }
 
     pages.push(
