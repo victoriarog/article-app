@@ -1,45 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nixie+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ledger&family=Libre+Baskerville&family=Nixie+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ledger&family=Nixie+One&display=swap');
 
 .App {
-  height: 100vh; 
+  height: 100vh;
   font-family: "Ledger", serif;
-  background-color: RGB(236, 238, 240);
-  color: #0E1515;
-
+  background-color: #eceef0;
+  color: #0e1515;
   overflow-y: hidden;
 }
 
 .flex-container {
   padding: 2em 3em 2em 0;
   height: calc(100% - 15vh);
-  
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
-  column-gap: 5%;
+  column-gap: 5vw;
 }
 
 .flex-item1, .flex-item2 {
-  display: block;
-
   flex-grow: 0;
   flex-shrink: 0;
 }
 
-.flex-item1 {
-  flex-basis: 35%;
-}
-
+.flex-item1 { flex-basis: 35%; }
 .flex-item2 {
   flex-basis: 50%;
-
   border: 0.1vh solid grey;
   border-radius: 10px;
-
-  overflow-y:auto;
-  scrollbar-color: grey #ECEEF0;
+  overflow-y: auto;
+  scrollbar-color: grey #eceef0;
 }
 
 .vertical-line {
@@ -48,13 +37,8 @@
   margin: 0;
 }
 
-.textBox * {
-  padding: 2vh 2vw;
-}
-
-h1, h3, p {
-  margin: 0;
-}
+.textBox * { padding: 2vh 2vw; }
+h1, h3, p { margin: 0; }
 
 h1 {
   font-size: 2.5vh;
@@ -65,66 +49,41 @@ h1 {
 h3 {
   font-size: 2vh;
   font-weight: 250;
-
   padding: 0.1vh 0 0.6vh 0.8vh;
 }
 
-p {
-  font-size: 2.2vh;
-  font-weight: 200;
-}
+p { font-size: 2.2vh; font-weight: 200; }
 
 .articleBox {
   border-bottom: 0.1vh solid grey;
   border-radius: 1vh;
 }
 
-li {
-  list-style: none;
-  padding-bottom: 0.7vh ;
-}
-
-ul {
-  margin: 0;
-}
+li { list-style: none; padding-bottom: 0.7vh; }
+ul { margin: 0; }
 
 input {
   width: 25vw;
   height: 4.5vh;
   border: none;
   border-bottom: 0.1vh solid grey;
-  font-size: 2.3vh;  
+  font-size: 2.3vh;
   font-family: "Nixie One", system-ui;
-
-  background-color: RGB(236, 238, 240);
-  
+  background-color: #eceef0;
   position: relative;
   left: 2vw;
-
   padding-top: 1vh;
 }
 
-input::placeholder {
-  color: #0E1515;
-}
+input::placeholder { color: #0e1515; }
+input:focus { outline: none; }
 
-input:focus {
-  outline: none;
-}
-
-.pagination {
-  padding: 1vh;
-  text-align: center;
-}
+.pagination { padding: 1vh; text-align: center; }
 
 .paginationButton {
-  border-radius: 2vh; 
+  border-radius: 2vh;
   border: none;
   font-size: 3vh;
   padding: 0 1.5vh;
-
   font-family: "Ledger", serif;
 }
-
-
-

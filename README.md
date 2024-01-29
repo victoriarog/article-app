@@ -10,13 +10,13 @@
 * [Getting Started](#getting-started)
     * [Installation](#installation)
 * [Architechture](#architechture)
-    *[Overall Structure](#overall-structure)
-    *[App Component](#app-component)
-    *[ArticleList Component](#articlelist-component)
-    *[ArticleText Component](#articletext-component)
-    *[Search Component](#search-component)
-    *[Pagination Component](#pagination-component)
-    *[VerticalLine Component](#verticalline-component)
+    * [Overall Structure](#overall-structure)
+    * [App Component](#app-component)
+    * [ArticleList Component](#articlelist-component)
+    * [ArticleText Component](#articletext-component)
+    * [Search Component](#search-component)
+    * [Pagination Component](#pagination-component)
+    * [VerticalLine Component](#verticalline-component)
 * [Technical Trade-offs](#technical-trade-offs)
 * [Contributing](#contributing)
 * [Authors](#authors)
@@ -133,6 +133,10 @@ familiarising myself with them.
 
 More profound and fuller coverage tests would also be beneficial if more time to delve 
 deeper into familiarising myself with testing libraries was available. 
+
+Some issues with Search component arise due to the act that article text is made 
+through "Lorem Ipsum generator", so sometimes it skews the results due to having a lot 
+of fake Latin resembling words or letter combinations from titles/undertitles. 
 
 
 
